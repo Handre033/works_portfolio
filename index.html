@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>andrea mussini</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+
+    <!-- Personal Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <header>
+        <p class="title float-left"><a href="index.html">andrea mussini</a></p>
+        <p class="subtitle float-right"><a href="about.html">about</a> / <a href="works.html">works</a></p>
+    </header>
+    <main>
+        <div class="index-swiper-container">
+            <!-- Swiper -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="details/optical_art.html"><img class="swiper-pic" src="img/optical_art/op_art_thumbnail.jpg" /></a>
+                        <div class="preview-text">
+                            <p class="title float-left">optical art</p>
+                            <p class="subtitle float-right">graphic</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/peste_font.html"><img class="swiper-pic" src="img/peste/peste_thumbnail.jpg" /></a>
+                        <div class="preview-text">
+                            <p class="title float-left">"la peste" font production</p>
+                            <p class="subtitle float-right">graphic</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/liquids.html"><img class="swiper-pic" src="img/liquids/liquids_thumbnail.jpg" /></a>
+                        <div class="preview-text">
+                            <p class="title float-left">2d liquids practice</p>
+                            <p class="subtitle float-right">motion / illustration</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/ahoy_landing.html"><img class="swiper-pic" src="img/ahoy/ahoy_thumbnail.jpg" /></a>
+                        <div class="preview-text">
+                            <p class="title float-left">"ahoy!" landing page</p>
+                            <p class="subtitle float-right">web</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="details/glitch.html"><img class="swiper-pic" src="img/glitch/glitch_thumbnail.jpg" /></a>
+                        <div class="preview-text">
+                            <p class="title float-left">glitch fx practice</p>
+                            <p class="subtitle float-right">motion</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-text text-center">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <p>© 2021 - andreamussini</p>
+                </div>
+                <div class="col">
+                    <p><a href="https://www.instagram.com/andreamvisuals/">instagram</a> / <a href="https://vimeo.com/andreamvisuals">vimeo</a> / <a href="https://www.linkedin.com/in/andrea-mussini-540a48217/"> linkedin</a> / <a href="https://www.behance.net/andreamussini">behance</a></p>
+                </div>
+                <div class="col">
+                    <p><a href="mailto:andreamvisuals@gmail.com">andreamvisuals@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Swiper JS -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 400,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        grabCursor: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+</script>
+
+</html>
